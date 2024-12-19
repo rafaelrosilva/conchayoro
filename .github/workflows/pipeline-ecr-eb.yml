@@ -1,7 +1,7 @@
 name: integracao-ecr-eb
 
 on:
-  push:
+  workflow_dispatch: # Permite execução manual do pipeline
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
